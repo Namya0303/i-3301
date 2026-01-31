@@ -12,7 +12,7 @@ document.getElementById("log-in").addEventListener("submit", async (e) => {
     await signInWithEmailAndPassword(auth, email, password);
 
     // Hard redirect on success
-    window.location.replace("/dashboard.html");
+    window.location.replace("dashboard.html");
 
   } catch (err) {
     console.error(err);

@@ -39,7 +39,7 @@ async function hashAnswer(ans) {
 
 onAuthStateChanged(auth, async (user) => {
   if (!user) {
-    window.location.replace("/login.html");
+    window.location.replace("login.html");
     return;
   }
 

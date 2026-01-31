@@ -7,7 +7,7 @@ import { doc, getDoc } from
 // AUTH + EMAIL VERIFICATION GUARD
 onAuthStateChanged(auth, async (user) => {
   if (!user) {
-    window.location.replace("/login.html");
+    window.location.replace("login.html");
     return;
   }
 

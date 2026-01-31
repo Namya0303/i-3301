@@ -11,7 +11,7 @@ onAuthStateChanged(auth, async (user) => {
 
   if (user) {
     // logged in → go to dashboard
-    window.location.replace("/dashboard.html");
+    window.location.replace("dashboard.html");
   } 
 });
 console.log("auth guard loaded");

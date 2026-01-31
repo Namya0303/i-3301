@@ -6,6 +6,6 @@ import { onAuthStateChanged } from
 onAuthStateChanged(auth, (user) => {
   if (!user) {
     // Hard redirect – cannot be bypassed
-    window.location.replace("/login.html");
+    window.location.replace("login.html");
   }
 });
