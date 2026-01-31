@@ -72,8 +72,9 @@ onAuthStateChanged(auth, async (user) => {
   }
 
   // 3️⃣ Render question
-  if (levelData.Qtype === "text") {
+  if (levelData.Qtype === "txt") {
     questionArea.innerHTML = `<p style="color:white;">${levelData.Q}</p>`;
+    console.log("text question works")
   }
 
   if (levelData.Qtype === "img") {
