@@ -4,6 +4,6 @@ import { onAuthStateChanged } from
 
 onAuthStateChanged(auth, (user) => {
   if (user) {
-    window.location.replace("/dashboard.html");
+    window.location.replace("dashboard.html");
   }
 });
