@@ -17,7 +17,14 @@ console.log("submit intercepted");
 
   const p1name = document.getElementById("name1").value.trim();
   const p2name = document.getElementById("name2").value.trim();
-  const college = document.getElementById("college").value.trim();
+
+const collegeSelect = document.getElementById("college");
+const college = collegeSelect.value;
+
+if (!collegeSelect.checkValidity()) {
+  alert("Please select your college.");
+  return;
+}
 
   const username = document.getElementById("username").value.trim();
   const email = document.getElementById("email").value.trim();
